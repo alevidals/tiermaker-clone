@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/index.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header id="page-header">
+    <h1>Tiermaker</h1>
+  </header>
+
+  <section class="tier">
+    <div class="row">
+      <div class="label" style="--level: var(--color-s)">
+        <span contenteditable="true">S</span>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="row">
+      <div class="label" style="--level: var(--color-a)">
+        <span contenteditable="true">A</span>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="row">
+      <div class="label" style="--level: var(--color-b)">
+        <span contenteditable="true">B</span>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="row">
+      <div class="label" style="--level: var(--color-c)">
+        <span contenteditable="true">C</span>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="row">
+      <div class="label" style="--level: var(--color-d)">
+        <span contenteditable="true">D</span>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="row">
+      <div class="label" style="--level: var(--color-e)">
+        <span contenteditable="true">E</span>
+      </div>
+      <div></div>
+    </div>
+  </section>
+
+  <section id="tier-items">
+
+  </section>
+
+  <label id="tier-items-label">
+    <input id="image-input" accept="image/*" type="file" multiple hidden />
+    <div class="info-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-upload">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+        <path d="M7 9l5 -5l5 5" />
+        <path d="M12 4l0 12" />
+      </svg>
+      <div class="info">
+        <p>Click here or drag and drop to add items</p>
+        <p>
+          Accepted file types: JPG, PNG, GIF, WEBP
+        </p>
+      </div>
+  </label>
+  </div>
+
+  <script type="module" src="./index.js"></script>
+</body>
+
+</html>
