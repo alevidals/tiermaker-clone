@@ -73,6 +73,9 @@ function handleTierItemsDragOver(event) {
   event.preventDefault();
 
   const { currentTarget } = event;
+
+  if (currentTarget === sourceContainer) return;
+
   currentTarget.classList.add("drag-over");
 
   const preview = document.querySelector(".drag-preview");
@@ -122,6 +125,11 @@ function addItem(itemSrc) {
     sourceContainer = event.target.parentNode;
     draggedItem = event.target;
     event.dataTransfer.setData("text/plain", event.target.src);
+  });
+
+  imgElement.addEventListener("dragend", (event) => {
+    sourceContainer = null;
+    draggedItem = null;
   });
 
   tierItems.appendChild(imgElement);
